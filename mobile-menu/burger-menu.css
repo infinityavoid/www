@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'GothamProBlack';
+    src: url('../fonts/GothamProBlack.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'GothamProMedium';
+    src: url('../fonts/gothampro_medium.ttf');
+}
+@font-face {
+    font-family: 'GothamProLight';
+    src: url('../fonts/gothampro_light.ttf');
+}
+.header__burger-menu
+{
+    width: 576px;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
+    background-color: white;
+    z-index: 11111111;
+    box-shadow: 0px 15px 25px 0px rgba(51, 51, 51, 0.24);
+}
+.header__burger-menu_show
+{
+    visibility: visible;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.burger-menu__header
+{
+    padding: 38px 33px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 576px;
+}
+.burger-menu__header-logo
+{
+    width: 149px;
+    height: 50;
+}
+.burger-menu__header-button
+{
+    background-image: url('./img/close-button.svg');
+    width: 61px;
+    height: 61px;
+    background-color: white;
+    background-position: center;
+}
+.burger-menu__main
+{
+
+}
+.burger-menu__list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.burger-menu__list-item
+{
+    width: 576px;
+    margin: 20px 0;
+}
+.burger-menu__list-link
+{
+    color: var(--unnamed, #333);
+    text-align: center;
+    font-family: 'GothamProBlack';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 114.84%;
+    display: block;
+}
+.burger-menu__content-arrow
+{
+    margin-left: 15px;
+}
+.burger-menu__arrow-opened
+{
+    width: 18px;
+    height: 12px;
+    background-image: url('./img/arrow-opened.svg');
+    background-repeat: no-repeat;
+    display: inline-flex;
+}
+.burger-menu__arrow-closed
+{
+    width: 18px;
+    height: 12px;
+    background-image: url('./img/arrow-closed.svg');
+    background-repeat: no-repeat;
+    display: inline-flex;
+}
+.burger-menu__list-additional
+{
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+.burger-menu__additional-item
+{
+    height: 74px;
+    background-color: #F0F0F0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--unnamed, #333);
+    text-align: center;
+    font-family: 'GothamProMedium';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114.84%;
+}
+.burger-menu__controls
+{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.burger-menu__controls-glasses
+{
+    display: block;
+    background-image: url('../img/glasses.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border: none;
+    width: 39px;
+    height: 15px;
+}
+.burger-menu__controls-glasses:hover
+{
+    background-image: url('../img/glasses-active.svg');
+}
+.burger-menu__controls-lang
+{
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    height: 66px;
+    background-color: var(--unnamed, #F0F0F0);
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    gap: 21px;
+}
+.burger-menu__lang
+{
+    color: var(--unnamed, #333);
+    font-family: 'Baufra-Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.burger-menu__lang_selected
+{
+    color: var(--unnamed, #A2CC5C);
+    font-family: 'Baufra-Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.burger-menu__lang:hover
+{
+    color: var(--unnamed, #A2CC5C);
+}
+.burger-menu__footer
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-top: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+.burger-menu__footer-phone
+{
+    text-align: center;
+}
+.burger-menu__footer-phone-loc
+{
+    color: var(--unnamed, #A2CC5C);
+    font-family: 'RobotoLight';
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.burger-menu__footer-phone-identity
+{
+    color: var(--unnamed, #A2CC5C);
+    font-family: 'RobotoBold';
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.burger-menu__footer-address
+{
+    width: 160px;
+    margin-top: 23px;
+    color: var(--unnamed, #333);
+    text-align: center;
+    font-family: 'GothamProLight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+}
+@media (max-width:576px) {
+    .header__burger-menu
+    {
+        width: 375px;
+    }
+}
