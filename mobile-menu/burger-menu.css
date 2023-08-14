@@ -19,6 +19,10 @@
     font-family: 'GothamProLight';
     src: url('../fonts/gothampro_light.ttf');
 }
+.disable-scroll
+{
+    overflow-y: hidden;
+}
 .header__burger-menu
 {
     width: 576px;
@@ -240,6 +244,9 @@
     .header__burger-menu
     {
         width: 100%;
+        position: fixed;
+        height: 100vh;
+        overflow: auto;
     }
     .burger-menu__list-item
     {

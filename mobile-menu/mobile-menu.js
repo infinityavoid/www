@@ -1,10 +1,11 @@
 const button = document.getElementById('burger-button');
-console.log('script menu work')
 const menu = document.getElementById('burger-menu');
+const html = document.querySelector('html')
 
 if (button) {
     button.addEventListener('click', function () {
         menu.classList.add('header__burger-menu_show');
+        html.classList.add('disable-scroll')
     })
 }
 
@@ -15,6 +16,7 @@ const closeButton = document.createElement('button')
 closeButton.classList.add('burger-menu__header-button')
 closeButton.addEventListener('click', function () {
     menu.classList.remove('header__burger-menu_show')
+    html.classList.remove('disable-scroll')
 })
 const logo = document.createElement('img')
 logo.classList.add('burger-menu__header-logo')
