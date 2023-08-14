@@ -67,7 +67,7 @@
 }
 .burger-menu__main
 {
-
+    margin-top: 38px;
 }
 .burger-menu__list
 {
@@ -75,6 +75,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
+    margin: 0;
 }
 .burger-menu__list-item
 {
@@ -238,10 +239,10 @@
 @media (max-width:576px) {
     .header__burger-menu
     {
-        width: 375px;
+        width: 100%;
     }
     .burger-menu__list-item
     {
-        width: 375px;
+        width: 100%;
     }
 }

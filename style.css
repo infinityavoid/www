@@ -134,6 +134,8 @@ header
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: color 0.25s ease-in-out;
+    cursor: pointer;
 }
 .header__menu-item:hover
 {
@@ -153,12 +155,14 @@ header
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    transition: color 0.25s ease-in-out;
+    cursor: pointer;
 }
 .header__language-item:hover
 {
     color: var(--unnamed, #A2CC5C);
 }
-.header__language-item_selected
+.header__language-item-selected
 {
     color: var(--unnamed, #A2CC5C);
     font-family: 'Baufra-Medium';
@@ -176,6 +180,8 @@ header
     background-position: center;
     background-color: white;
     border: none;
+    transition: background-image 0.25s ease-in-out;
+    cursor: pointer;
 }
 .header__glasses:hover
 {
@@ -411,7 +417,6 @@ header
 {
     position: relative; 
     max-width: 1920px; 
-    overflow: hidden; 
     margin: 0 auto;
 }
 .news__rectangle-green
@@ -477,7 +482,7 @@ header
     position: relative; 
     height: 68px;
 }
-.content-title__text_bold
+.content-title__text-bold
 {
     font-family:'Montserrat-ExtraBold';
     font-size: 56px;
@@ -485,7 +490,7 @@ header
     font-weight: 900;
     line-height: normal;
 }
-.content-title__text_normal
+.content-title__text-normal
 {
     color: var(--unnamed, #333);
     font-family: 'Montserrat-Regular';
@@ -528,6 +533,7 @@ header
     flex-direction: row;
     margin-top: 44px;
     margin-bottom: 44px;
+    cursor: pointer;
 }
 .news__list-item_right
 {
@@ -556,7 +562,16 @@ header
 }
 .news__list-item:hover .news__list-picture
 {
-    transform: scale(1.1);
+    animation: scaleAnimation 0.5s ease-in-out forwards;
+}
+@keyframes scaleAnimation
+{
+    0% {
+        transform: scale(1);
+      }
+    100% {
+        transform: scale(1.1);
+    }
 }
 .news__list-date
 {
@@ -584,6 +599,7 @@ header
     font-style: normal;
     font-weight: 700;
     line-height: 44px;
+    transition: color 0.25s ease-in-out;
 }
 .news__list-text
 {
@@ -595,6 +611,7 @@ header
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    transition: color 0.25s ease-in-out;
 }
 .show-button
 {
@@ -610,6 +627,7 @@ header
     align-items: center;
     margin-bottom: 91px;
     background-color: white;
+    transition: color, background-color 0.25s ease-in-out;
 }
 .show-button:hover
 {
@@ -805,6 +823,7 @@ header
     font-weight: 700;
     line-height: normal;
     height: 20px;
+    transition: color 0.25s ease-in-out;
 }
 .footer__menu-item-link:hover
 {
@@ -883,6 +902,7 @@ header
     background-color: #333333;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-image 0.25s ease-in-out;
     cursor: pointer;
 }
 .scroll-button:hover
@@ -1414,7 +1434,7 @@ header
         font-weight: 400;
         line-height: normal;
     }
-    .content-title__text_bold
+    .content-title__text-bold
     {
         color: var(--unnamed, #333);
         font-size: 34px;
@@ -1422,7 +1442,7 @@ header
         font-weight: 900;
         line-height: normal;
     }
-    .content-title__text_normal
+    .content-title__text-normal
     {
         color: var(--unnamed, #333);
         font-size: 34px;

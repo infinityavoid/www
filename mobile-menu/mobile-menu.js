@@ -1,5 +1,5 @@
 const button = document.getElementById('burger-button');
-
+console.log('script menu work')
 const menu = document.getElementById('burger-menu');
 
 if (button) {
@@ -94,7 +94,7 @@ listContent.forEach(item =>
 
         divElement.style.display = 'none';
         
-        arrow.addEventListener('click', () => 
+        link.addEventListener('click', () => 
         {
         if (divElement.style.display === 'none') {
             arrow.classList.toggle('burger-menu__arrow-opened')
